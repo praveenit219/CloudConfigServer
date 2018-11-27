@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.pheonix.cloudconfigserver</groupId>
-	<artifactId>pheonix-Cloud-ConfigServer</artifactId>
+	<artifactId>pheonix-cloudconfigserver</artifactId>
 	<version>${version.number}</version>
 	<packaging>jar</packaging>
 
