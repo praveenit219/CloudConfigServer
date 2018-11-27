@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.pheonix.cloudconfigserver</groupId>
-	<artifactId>CloudConfigServer</artifactId>
+	<artifactId>pheonix-CloudConfigServer</artifactId>
 	<version>${version.number}</version>
 	<packaging>jar</packaging>
 
@@ -110,7 +110,7 @@
 									<descriptor>assembly.xml</descriptor>
 								</assembly>
 								<ports>
-									<port>10203</port>
+									<port>10801</port>
 								</ports>
 							
 								<cmd>

@@ -1,6 +1,6 @@
 # image not found? login using "docker login --username=abc --password=abc https://registry.domain.de"
 services: 
-  CloudConfigServer: 
+  pheonix-CloudConfigServer: 
     container_name: pheonix-CloudConfigServer
     image: "praveenit219/pheonix-CloudConfigServer:latest"
     network_mode: host
