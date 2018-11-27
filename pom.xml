@@ -113,11 +113,22 @@
 									<port>10801</port>
 								</ports>
 							
-								<cmd>
+							<entryPoint>
+                                <exec>
+                                    <arg>java</arg>
+                                    <!-- This extra argument is so Tomcat can start faster due to lack of entropy -->
+                                    <arg>-Djava.security.egd=file:/dev/./urandom</arg>
+                                    <arg>-jar</arg>
+                                    <!-- /maven/ is the default dir that the plugin copies your artifact to -->
+                                    <arg>/maven/${project.artifactId}--${version.number}.${project.packaging}</arg>
+                                </exec>
+                            </entryPoint>
+                            
+								<!-- <cmd>
 									<shell>
 										java -jar /maven/${project.artifactId}-${version.number}.jar
 									</shell>
-								</cmd>
+								</cmd>  -->
 							</build>
 						</image>
 					</images>
